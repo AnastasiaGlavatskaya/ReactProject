@@ -1,38 +1,79 @@
 .App {
   text-align: center;
+  font-size : 18px;
+  font-family: "Palatino Linotype";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: rgb(255, 238, 222);
+  font-family: 'Verdana', sans-serif;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+textarea {
+  padding: 2px;
+  margin: 10px;
+  border-radius: 5px;
+  height: 40px;
+  min-width: 10%;
+  max-width: 90%;
+  min-height: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.input-text{
+  width: 300px;
+}
+
+.input-title{
+  width: 15%;
+}
+
+.app-title{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+}
+
+.btn{
+  margin: 20px;
   color: white;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-btn{
+  background: rgb(247, 147, 16);
+  width: 100px;
+  height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe {
+  width: 70%;
+  min-width: 300px;
+  margin: 10px auto;
+  padding: 30px;
+  background-color: rgb(231, 180, 104);
+  border: bisque 2px solid;
+  text-align: left;
+  border-radius: 16px;
+  hyphens: auto;
+}
+
+.title{
+  text-align: center;
+  font-size : 20px;
+
+}
+
+.ingredients{
+  color: rgb(41, 41, 41);
+  font-size : 16px;
+}
+
+.container{
+  border: 6px solid rgb(231, 180, 104);
+  border-radius: 26px;
+  width: 50%;
+  min-width: 400px;
+  margin: 10px auto;
+  padding: 40px 20px;
 }
