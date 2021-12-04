@@ -23,6 +23,8 @@ class App extends React.Component {
 
 
     addRecipe() {
+            
+        
         const newRecipe = {
             id : 1 + this.state.id,
             value : {
@@ -30,8 +32,9 @@ class App extends React.Component {
                 ingredients : this.state.ingredients.slice(),
                 text : this.state.text.slice()
             }
-        };
-
+        }
+        
+        if (newRecipe.value.text != "" ) {
         this.setState({
             id : newRecipe.id,
             title : "",
@@ -39,6 +42,7 @@ class App extends React.Component {
             text : "",
             recipes : [...this.state.recipes, newRecipe]
         })
+    }
     }
 
 
@@ -67,7 +71,7 @@ class App extends React.Component {
                     <textarea
                         className="input-text"
                         type="text"
-                        placeholder="Способ приготовления"
+                        placeholder="Способ приготовления (обязательно)"
                         value={this.state.text}
                         onChange={(e) => this.updateInput("text", e.target.value)}
                     />
