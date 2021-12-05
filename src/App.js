@@ -14,7 +14,7 @@ class App extends React.Component {
             recipes : []
         }
     }
-
+    
     updateInput(key, value) {
         this.setState({
             [key] : value
@@ -22,9 +22,7 @@ class App extends React.Component {
     }
 
 
-    addRecipe() {
-            
-        
+    addRecipe() {      
         const newRecipe = {
             id : 1 + this.state.id,
             value : {
@@ -35,15 +33,16 @@ class App extends React.Component {
         }
         
         if (newRecipe.value.text != "" ) {
-        this.setState({
-            id : newRecipe.id,
-            title : "",
-            ingredients : "",
-            text : "",
-            recipes : [...this.state.recipes, newRecipe]
-        })
+            this.setState({
+                id : newRecipe.id,
+                title : "",
+                ingredients : "",
+                text : "",
+                recipes : [...this.state.recipes, newRecipe]
+            })
+        }
     }
-    }
+    
 
 
 

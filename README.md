@@ -1,1 +1,1 @@
- 
+An application that shows your recipes with the ability to add new ones
